@@ -1,0 +1,152 @@
+name: Max Cantor
+
+titles:
+  - Web Development Mentor
+  - Senior Software Engineer
+  - Classroom Instructor
+
+links:
+  homepage: www.maxcantor.net
+  github: mcantor
+  twitter: mcantor
+
+location: Long Island City, NY
+email: max@maxcantor.net
+phone: (917) 960-9276
+
+education:
+  school: Bennington College
+  degree: B.A. Liberal Arts
+  location: Bennington, VT
+  time: 2007
+
+phrase: Bridge the gap between people and code.
+
+objective: >
+  A leadership position that will benefit not only from the experience of my
+  long programming career, but also from my exceptional skills as a mentor,
+  creativity coach, and manager.  The ideal employer will share my personal
+  values of consumer-focused decision making, constant improvement, and
+  inclusivity.
+
+core_competencies:
+  code:
+    name: Programming
+    years: 20
+    more: Ruby &mdash; Python &mdash; JavaScript &mdash; C &mdash; Vim &mdash; bash &mdash; tmux &mdash; git
+  web:
+    name: Web Development
+    years: 15
+    more: Rack &mdash; Rails &mdash; HTTP &mdash; SCSS &mdash; HTML5 &mdash; SQL &mdash; Chrome DevTools
+  oss:
+    name: Open Source Software
+    years: 10
+    more: Patches accepted to rubyzip, rack, rvm, sphinx, vim, and jekyll; experienced with Linux for desktop, laptop, and sysadmin
+  man:
+    name: Management
+    years: 5
+    more: Work experience with startups and Fortune 500s; history of success in entrepreneurship and personal projects; adept problem solver
+  speak:
+    name: Public Speaking
+    years: 5
+    more: Commended talks given at NYC.rb & Vim meetups
+  teach:
+    name: Classroom Teaching
+    years: 3
+    more: Databases, programming, computer fluency, with students of all ages
+
+jobs:
+  jump:
+    employer: Programming Jumpstart
+    url: programmingjumpstart.com
+    title: Owner
+    location: New York, NY
+    time: 2016
+    info:
+      - Developed a unique method that teaches both applicable skills and fundamental concepts
+      - Provided vital strategies for self-teaching core technologies like the command line
+      - Boosted students' confidence with a friendly approach sensitive to their emotional needs
+      - Extended runway with freelance curriculum writing for Flatiron School and two edtech non-profits
+      - Followed a detailed business plan affording for a timely transition back to full-time employment
+
+  neo:
+    employer: Neo Innovation
+    title: Senior Software Engineer
+    location: New York, NY
+    time: 2015
+    info:
+      - Provided mentorship and architectural guidance to startup founders and engineers
+      - Developed Ember, Rails, and Angular projects for clients
+    page_break_after: true
+
+  ga:
+    employer: General Assembly
+    title: Senior Instructor
+    location: New York, NY
+    time: 2014
+    info:
+      - Taught 3 full-time immersive cohorts, over 100 students with <strong>90%</strong> job placement
+      - Crafted curriculum resources still being taught to students around the globe
+      - Received an average student feedback rating of <strong>4.65</strong>&nbsp;/&nbsp;5, the top 95th percentile of instructors
+      - Appeared at public info sessions, encouraging dozens of prospective students to sign up
+      - Students now work at employers such as Nfoshare, BackerKit, Viacom, and PR Newswire
+
+  cons:
+    employer: Max Cantor Studios LLC.
+    title: Consultant
+    location: Various
+    time: 2012 - 2013
+    projects:
+      crea:
+        name: Crea
+        url: siegegames.com/weekly-recap-1
+        client: Siege Games
+        summary: a crowdfunded highly-moddable "sandbox" game (eg. Minecraft)
+        info:
+          - Ported the game to Linux, developing critical build systems still in use
+          - Built an extensive Python modding API on top of the game's C++ Boost engine
+      crmgpro:
+        name: CRMGpro
+        client: Art & Logic / Google
+        summary: an AppEngine internal CRM for sales and OKR tracking
+      cheatsheet:
+        name: Beautiful Vim Cheatsheet
+        url: vimcheatsheet.com
+        summary: an educational reference sheet for everyone
+        info:
+          - Designed an intuitive visual tutorial with universal appeal to beginners and experts
+          - Raised $12k in 2 weeks to design, print & ship a poster that still attracts enthusiasm today
+
+  fetlife:
+    employer: Bitlove Inc.
+    title: Developer
+    location: Remote
+    time: 2011
+    info:
+      - Implemented scalable features in Ruby on Rails for a social network with over 2,000,000 members
+      - Resolved performance issues in distributed systems and design problems in service-based code
+      - Worked with the co-founder and community volunteers to brainstorm new features
+
+  dd:
+    employer: DimpleDough
+    title: Developer
+    location: Independence, OH
+    time: 2010
+
+  agi:
+    employer: American Greetings Interactive
+    title: Developer
+    location: Cleveland, OH
+    time: 2007 - 2009
+
+  sanofi:
+    employer: Sanofi-Pasteur
+    title: Web Team Intern
+    location: Stroudsburg, PA
+    time: 2006
+
+  cc:
+    employer: CyberCamps by GiantCampus
+    title: Counselor
+    location: Various
+    time: 2003 - 2006

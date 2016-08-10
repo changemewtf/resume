@@ -1,0 +1,110 @@
+!!!html
+%html{lang: "en"}
+  %head
+    %title
+    %style{type: "text/css"}= sass
+  %body
+    %script{src: "https://use.fontawesome.com/98ace7bdc4.js"}
+    #wrapper
+
+      %table#masthead
+        %tr
+          %td#name{colspan: 5}
+            %h1= name
+
+        %tr#titles
+          %td
+            %span= titles[0]
+          %td.separator &mdash;
+          %td
+            %span= titles[1]
+          %td.separator &mdash;
+          %td
+            %span= titles[2]
+
+        %tr#contact
+          %td#location
+            %span= location
+          %td.separator &mdash;
+          %td#email
+            %a{href: "mailto:#{email}"}= email
+          %td.separator &mdash;
+          %td#phone
+            %span= phone
+
+        %tr#links
+          %td#twitter
+            %i.fa.fa-twitter{"aria-hidden" => true}
+            %a{href: "http://twitter.com/#{links['twitter']}"}> mcantor
+          %td.separator &mdash;
+          %td#homepage
+            %a{href: "http://#{links['homepage']}"}= links['homepage']
+          %td.separator &mdash;
+          %td#github
+            %i.fa.fa-github{"aria-hidden" => true}
+            %a{href: "http://github.com/#{links['github']}"}> mcantor
+
+      %section#objective
+        %h2 Objective
+        %h3= "&raquo;&nbsp;#{phrase}"
+        %p= objective
+
+      %section#core-competencies
+        %h2 Core Competencies
+        %table
+          - core_competencies.each do |key, coco|
+            %tr.core-competency
+              %td.name= coco['name']
+              %td.years= coco['years'].to_s + " years"
+              %td.more!= coco['more']
+
+      %section#work-experience
+        %h2 Work Experience
+        %section#jobs
+          - jobs.each do |jkey, job|
+            %div.job{id: jkey}
+              %span.employer>
+                - if job['url']
+                  %a{href: "http://#{job['url']}"}= job['employer']
+                - else
+                  = job['employer']
+              %span.title>= job['title']
+              %span.location>= job['location']
+              %span.time>= job['time']
+
+              - if job['info']
+                - if job['info'].respond_to? :each
+                  %ul.info
+                    - job['info'].each do |blurb|
+                      %li= blurb
+                - elsif job['info'].is_a? String
+                  %p.info= job['info']
+
+              - if job['projects']
+                %ul.projects
+                  - job['projects'].each do |pkey, project|
+                    %li
+                      %span.name><
+                        - if project['url']
+                          %a{href: "http://#{project['url']}"}><= project['name']
+                        - else
+                          = project['name']
+
+                      - if project['client']
+                        %span.separator @
+                        %span.client>= project['client']
+
+                      %span.summary= ", " + project['summary']
+                      - if project['info']
+                        %ul.info
+                          - project['info'].each do |blurb|
+                            %li= blurb
+
+      %section#education
+        %h2 Education
+        %section#schools
+          .school
+            %span.name>= education['school']
+            %span.degree>= education['degree']
+            %span.location>= education['location']
+            %span.time>= education['time']
